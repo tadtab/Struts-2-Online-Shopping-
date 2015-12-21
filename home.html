@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Vertical (basic) form</h2>
+	<form role="form">
+		<div class="form-group">
+			<label for="email">Email:</label>
+			<input type="email" class="form-control" id="email" placeholder="Enter Email">
+		</div>
+		<div class="form-group">
+			<label class="sr-only" for="pwd">Password:</label>
+			<input type="password" class="form-control" id="password" placeholder="Enter Password. Label enabled for screen readers only">
+		</div>
+		<div class="checkbox">
+			<label for="checkbox"><input type="checkbox">Remember Me</input>
+		</div>
+		<div class="">
+			<button type="submit" value="Submit" class="btn btn-default" >Submit</button>
+			<button type="submit" value="Submit" class="btn btn-primary" >Submit</button>
+			<button type="submit" value="Submit" class="btn btn-success" >Submit</button>
+			<button type="submit" value="Submit" class="btn btn-info" >Submit</button>
+			<button type="submit" value="Submit" class="btn btn-warning" >Submit</button>
+			<button type="submit" value="Submit" class="btn btn-danger" >Submit</button>
+	</form>
+	</br>
+	</br>
+	</br>
+	<form class="form-inline" role="form">
+		<div class="form-group">
+			<label for="email">Email:</label>
+			<input type="email" class="form-control" id="email" placeholder="Enter Email">
+		</div>
+		<div class="form-group">
+			<label for="pwd">Password:</label>
+			<input type="password" class="form-control" id="password" placeholder="Enter password">
+		</div>
+		<div class="checkbox">
+			<label class="checkbox"><input type="checkbox">Remember Me</label>
+		</div>
+		<button type="submit" class="btn btn-info">Submit</button>
+	</form>
+	</br>
+	</br>
+	</br>
+	<form class="form-horzontal" role="form">
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="email">Email:</label>
+			<div class="col-sm-10">
+				<input type="email" class="form-control" id="email" placeholder="Enter Email">
+			</div>
+		</div>
+		<div class="form-group">
+			
+			<label class="control-label col-sm-2" for="pwd">Password:</label>
+			
+			<div class="col-sm-10">
+				<input type="password" class="form-control" id="password" placeholder="Enter password">
+			</div>
+		</div>
+		<div class="form-group">
+		<div class="col-md-offset-2 col-md-10">
+			<div class="checkbox">
+				<label class="checkbox"><input type="checkbox">Remember Me</label>
+			</div>
+		</div>
+		</div>
+		<div class="form-group">
+		<div class="col-md-offset-2 col-md-10">
+			<button type="submit" class="btn btn-success">Submit</input>
+		</div>
+		</div>
+	</form>
+	</br>
+	</br>
+	</br>
+	<!-- label fiel, input
+		 in label fiel; mention the purpose of the fieldset, label
+		 in the input field menthion the type of the input, class -->
+	<form role="form">
+		<div class="form-group">
+			<label for="usr">User Name:</label>
+			<input class="form-control" type="text" placeholder="Enter User name">
+		</div>
+		<div class="form-group">
+			<label for="pwd">Password:</label>
+			<input class="form-control" type="password" placeholder="Enter Password">
+		</div>
+		 
+		<button class="btn btn-warning" type="submit">Submit</button>
+	</form>
+	</br>
+	</br>
+	</br>
+	<form role="form">
+		<div class="form-group">
+			<label for="comment">Comment:</label>
+			<textarea class="form-control" type="text" id="comment" rows="10"></textarea>
+		</div>
+		<button class="btn btn-danger" type="submit" >submit</button>
+	</form>
+	</br>
+	</br>
+	</br>
+	<div class="form-group">
+		<div class="checkbox">
+			<label><input type="checkbox" value="">Option one</label>
+		</div>
+		<div class="checkbox disabled">
+			<label><input type="checkbox" value="" disabled>Option two(Disabled)</label>
+		</div>
+	</div>
+	</br>
+	<label class="checkbox-inline"><input type="checkbox" value=""></input>Option one</label>
+	<label class="checkbox-inline disabled"><input type="checkbox" value="" disabled></input>Option two</label>
+	<label class="checkbox-inline"><input type="checkbox" value=""></input>Option three</label>
+	</br>
+	<!--for radio button select div class as radio, then in the label give the type and name optradio-->
+	<div class="radio">
+		<label><input type="radio" name="optradio">radio 1</input></label>
+		<label><input type="radio" name="optradio" disabled>radio 2</input></label>
+		<label><input type="radio" name="optradio">radio 3</input></label>
+	</div>
+	</br>
+	<form role="form">
+		<div class="form-group">
+			<label for="sel1">Select an item</label>
+			<select class="form-control" id="sel1">
+				<option>opt1</option>
+				<option>opt2</option>
+				<option>opt3</option>
+				<option>opt4</option>
+			</select>
+		
+		
+		  <label for="sel1">Select list:</label>
+		  <select multiple class="form-control" id="sel1">
+			<option>1</option>
+			<option disabled>2</option>
+			<option>3</option>
+			<option>4</option>
+		  </select>
+		</div>
+		<button class="btn btn-success">Submit</button>
+	</form>
+	</br>
+	<form class="form-horizontal" role="form">
+		<div class="form-group">
+			<label class="control-label col-md-2" for="email">Email:</label>
+			<div class="col-md-10">
+				<p class="form-control-static">tadtab@gmail.com</p>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-md-2" for="pwd">Password:</label>
+			<div class="col-md-10">
+				<input class="form-control" type="password" >
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-md-offset-2 col-md-10">
+				<button class="btn btn-danger" >Submit</button>
+			</div>
+		</div>
+	</form>
+	
+	<div class="col-md-offset-10 col-md-2">
+		<a href="#">Back to top</a>
+		<!--hello hhewlelfldldfldfldf-->
+	</div>	
+</div>
+</body>
+</html>
+
+	
